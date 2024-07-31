@@ -1,0 +1,99 @@
+@media (max-width: 1300px) {
+
+    .container {
+        margin: 2rem auto 0 auto;
+        max-width: 90%;
+    }
+}
+@media (max-width: 1040px) {
+
+    .container {
+        margin: 2rem auto 0 auto;
+        max-width: 90%;
+    }
+
+    .hero-main-text {
+        font-size: 4.25rem;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .button-group {
+        gap: 0.5rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 1rem 2.875rem;
+        border-radius: 3.125rem;
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+        text-wrap: nowrap;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        margin: 2rem auto 0 auto;
+        max-width: 90%;
+    }
+
+    .menu {
+        display: none;
+        margin-top: 3rem;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+
+    .hero-main-text {
+        font-size: 3rem;
+    }
+
+    .highlight-tex {
+        font-size: 3rem;
+
+    }
+
+    .button-group {
+        gap: 0.25rem;
+    }
+
+    .button-group button {
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 1rem 2.875rem;
+        border-radius: 3.125rem;
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+        text-wrap: nowrap;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .circle i {
+        display: block;
+        color: white;
+        font-size: 20px;
+    }
+}

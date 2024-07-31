@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: Miama;
+    src: url(./font/Miama.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    font-family: "Inter", sans-serif;
+    font-size: 2.25rem;
+    color: #E6533C;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.menu-list {
+    display: flex;
+    gap: 1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    padding: 1rem 0.5rem;
+    border: 1px solid #dadada;
+    border-radius: 2rem;
+}
+
+.menu-list a {
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+.menu-list a.active {
+    background-color: #E6533C;
+}
+
+.menu-bar {
+    display: none;
+    width: 24px;
+    color: white;
+}
+
+header {
+    padding: 1rem 0 0 0;
+    background-image: linear-gradient(180deg, #0B0B0B, #232323, #0B0B0B);
+}
+
+.hero-section {
+    margin-top: 6rem;
+    gap: 1.75rem;
+}
+
+.hero-text {
+    width: 90%;
+}
+
+.hero-main-text {
+    font-family: "Inter", sans-serif;
+    font-size: 4.875rem;
+    color: white;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.highlight-text {
+    font-size: 4.875rem;
+    color: white;
+    line-height: 1;
+    font-weight: normal;
+    font-family: Miama;
+}
+
+.highlight-text h1 {
+    line-height: 0.2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.8;
+    font-weight: 100;
+    width: 70%;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 1rem 2.875rem;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    text-wrap: nowrap;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #E6533C;
+    border: 1px solid #111;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.text-white {
+    color: white;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.gap-large {
+    gap: 1.75rem;
+}
+
+.img-con {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+   position: relative;
+}
+
+.hero-right{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
+.tutorial {
+    position: absolute;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: rgba(113, 111, 111, 0.252);
+    backdrop-filter: blur(8px);
+    border: 1px solid #fff;
+    bottom: 5%;
+    left: 0%;
+    gap: 12px;
+    color: #fff;
+}
+
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d97a0e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content h1{
+    font-size: 1.875rem;
+}
+.text-content h3{
+    font-size: 0.813rem;
+    text-wrap: nowrap;
+}
+.circle i {
+    display: none;
+}
+
+.vdo {
+    position: absolute;
+    padding: 20px 10px;
+    border-radius: 20px;
+    background-color: rgba(113, 111, 111, 0.252);
+    backdrop-filter: blur(8px);
+    border: 1px solid #fff;
+    top: 20%;
+    left: 55%;
+    gap: 12px;
+    color: #fff;
+}
+
+.vdo h1{
+    font-size: 1.875rem;
+}
+.vdo h3{
+    font-size: 0.813rem;
+    text-wrap: nowrap;
+}
+main{
+    background-color:#111 ;
+}
+
+.main{
+    width: 100%;
+    background: #000;
+}
+
+.habbitText{
+    text-align: center;
+    color: #fff;
+}
+.habbitText h1{
+    font-size: 3rem;
+}
+.habbitText p{
+    font-size: 0.8rem;
+}
