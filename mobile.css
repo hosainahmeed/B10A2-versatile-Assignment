@@ -42,6 +42,11 @@
     .hero-text p {
         font-size: 1rem;
     }
+
+    .child-habbit{
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
 
 @media (max-width: 680px) {
@@ -95,5 +100,18 @@
         display: block;
         color: white;
         font-size: 20px;
+    }
+    .sub-containear{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .habbitText h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .join-plot{
+        flex-direction: column;
     }
 }
