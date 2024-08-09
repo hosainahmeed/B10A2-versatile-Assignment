@@ -17,7 +17,7 @@
 body,
 html {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: #000;
 }
 
@@ -75,23 +75,26 @@ header {
 .hero-text {
     width: 90%;
 }
-.text-14{
+
+.text-14 {
     font-size: 0.9rem;
     opacity: 60%;
 }
-.text-18{
+
+.text-18 {
     font-size: 1.2rem;
 }
 
-.gap-1{
+.gap-1 {
     gap: 1rem;
 }
 
-.text-center{
+.text-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .hero-main-text {
     font-family: "Inter", sans-serif;
     font-size: 4.875rem;
@@ -134,6 +137,7 @@ header {
     font-weight: 400;
     font-size: 1rem;
     text-wrap: nowrap;
+    width: auto;
 }
 
 .btn-primary {
@@ -175,10 +179,10 @@ header {
     object-fit: contain;
     display: flex;
     align-items: center;
-   position: relative;
+    position: relative;
 }
 
-.hero-right{
+.hero-right {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -209,13 +213,15 @@ header {
     justify-content: center;
 }
 
-.text-content h1{
+.text-content h1 {
     font-size: 1.875rem;
 }
-.text-content h3{
+
+.text-content h3 {
     font-size: 0.813rem;
     text-wrap: nowrap;
 }
+
 .circle i {
     display: none;
 }
@@ -233,10 +239,11 @@ header {
     color: #fff;
 }
 
-.vdo h1{
+.vdo h1 {
     font-size: 1.875rem;
 }
-.vdo h3{
+
+.vdo h3 {
     font-size: 0.813rem;
     text-wrap: nowrap;
 }
@@ -246,6 +253,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 3.625rem;
+    margin-top: 7rem;
 }
 
 .habbitText {
@@ -297,39 +305,268 @@ header {
 }
 
 
-.join-plot{
+.join-plot {
     padding: 1.8rem 2rem;
     background-color: #222222;
-    border-radius: 2rem;
+    border-radius: .7rem;
 }
 
-.joinImg{
+.joinImg {
     height: 50%;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: .7rem;
 }
 
-.joinImg img{
+.joinImg img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: none;
+    object-position: 55% 28%;
 }
 
-.jointext{
+.jointext {
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 1rem;
 }
-.jointext h1{
+
+.jointext h1 {
     font-size: 2.5rem;
 }
-.jointext p{
+
+.jointext p {
     width: 80%;
     font-size: 14px;
     opacity: 60%;
 }
 
-.joinBtn{
+.joinBtn {
     margin-top: 2rem;
+}
+
+.trainSection {
+    color: white;
+    margin-top: 6.25rem;
+}
+
+.traning-text {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.traning-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.traning-text p {
+    width: 60%;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.imgSection {
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-shocase {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    width: 100%;
+    width: auto;
+}
+
+.img-shocase .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-shocase .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-shocase .item:hover img {
+    transform: scale(1.1);
+}
+
+.img-shocase .item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.img-shocase .item:hover::after {
+    opacity: 0.9;
+}
+
+.item-text {
+    position: absolute;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+    z-index: 2;
+}
+
+.one {
+    bottom: 10%;
+    left: 10%;
+}
+
+.top-left {
+    top: 10%;
+    left: 10%;
+}
+
+.top-right {
+    top: 10%;
+    right: 10%;
+}
+
+.item-2 {
+    grid-column: span 2;
+}
+
+.item-4 {
+    grid-column: span 2;
+}
+
+/* Custom background colors for the overlays */
+.img-shocase .item:nth-child(1)::after {
+    background-color: rgba(6, 255, 210, 0.3); 
+}
+
+.img-shocase .item:nth-child(2)::after {
+    background-color: rgba(255, 0, 0, 0.3); 
+}
+
+.img-shocase .item:nth-child(3)::after {
+    background-color: rgba(0, 0, 255, 0.4); 
+}
+
+.img-shocase .item:nth-child(4)::after {
+    background-color: rgba(0, 255, 255, 0.4); 
+}
+
+.img-shocase .item:nth-child(5)::after {
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+.img-shocase .item:nth-child(6)::after {
+    background-color: rgba(0, 71, 255, 0.3);
+}
+
+.bmi-chart {
+    color: #fff;
+    text-align: center;
+    max-width: 320px;
+}
+.bmi-chart h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table-heading{
+    color: #fff;
+}
+table {
+    width: 100%;
+    border: 0.1px solid #dadada;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: .1px solid #dadada;
+}
+th {
+    font-weight: normal;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.Calculate-bmi{
+    color: white;
+}
+
+.BMI_CON {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #282828;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Calculate-bmi h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Calculate-bmi p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group select {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    background-color: #383838;
+    color: #ffffff ;
+}
+
+.input-group input:focus{
+    color: #fff;
+}
+input::placeholder {
+    color: #999;
+}
+
+.calculator button {
+    width:auto;
+    padding: 1rem 6rem;
+    background-color: #ff5630;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.calculator button:hover {
+    background-color: #e64a19;
 }

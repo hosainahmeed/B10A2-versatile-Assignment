@@ -47,11 +47,18 @@
         flex-direction: column;
         gap: 3rem;
     }
+
+    .BMI_CON{
+        align-items: start;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 680px) {
+
     .container {
-        margin: 2rem auto 0 auto;
+        margin: 2rem auto 0;
         max-width: 90%;
     }
 
@@ -60,7 +67,7 @@
         margin-top: 3rem;
     }
 
-    .menu-bar{
+    .menu-bar {
         display: block;
     }
 
@@ -70,7 +77,6 @@
 
     .highlight-tex {
         font-size: 3rem;
-
     }
 
     .button-group {
@@ -89,7 +95,7 @@
         border-radius: 3.125rem;
         cursor: pointer;
         font-family: "Inter", sans-serif;
-        text-wrap: nowrap;
+        white-space: nowrap;
     }
 
     .hero-text p {
@@ -101,17 +107,64 @@
         color: white;
         font-size: 20px;
     }
-    .sub-containear{
+
+    .sub-containear {
         flex-direction: column;
         gap: 2.5rem;
     }
 
-    .habbitText h1{
+    .habbitText h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
     }
 
-    .join-plot{
+    .join-plot {
+        width: 100%;
         flex-direction: column;
+    }
+
+    .traning-text h1 {
+        margin-top: 66px;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .traning-text p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .joinImg img {
+        object-fit: contain;
+    }
+
+    .img-shocase {
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .item-2, .item-4 {
+        grid-column: span 1;
+    }
+
+    .img-shocase > :nth-child(3),
+    .img-shocase > :nth-child(6) {
+        display: none;
+    }
+
+    .item-text {
+        position: absolute;
+        color: white;
+        font-size:.7rem;
+        font-weight: 400;
+        line-height: 1;
+        z-index: 2;
+    }
+
+    .BMI_CON{
+        flex-direction: column;
+        gap: 2rem;
     }
 }
