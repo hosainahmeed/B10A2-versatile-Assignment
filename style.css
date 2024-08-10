@@ -12,6 +12,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "Inter", sans-serif;
+    color:#dadada;
 }
 
 body,
@@ -24,7 +25,6 @@ html {
 .container {
     max-width: 70%;
     margin: 0 auto;
-    width: 100%;
 }
 
 .logo {
@@ -347,7 +347,7 @@ header {
 
 .trainSection {
     color: white;
-    margin-top: 6.25rem;
+    margin-top: 6.5rem ;
 }
 
 .traning-text {
@@ -450,19 +450,19 @@ header {
 
 /* Custom background colors for the overlays */
 .img-shocase .item:nth-child(1)::after {
-    background-color: rgba(6, 255, 210, 0.3); 
+    background-color: rgba(6, 255, 210, 0.3);
 }
 
 .img-shocase .item:nth-child(2)::after {
-    background-color: rgba(255, 0, 0, 0.3); 
+    background-color: rgba(255, 0, 0, 0.3);
 }
 
 .img-shocase .item:nth-child(3)::after {
-    background-color: rgba(0, 0, 255, 0.4); 
+    background-color: rgba(0, 0, 255, 0.4);
 }
 
 .img-shocase .item:nth-child(4)::after {
-    background-color: rgba(0, 255, 255, 0.4); 
+    background-color: rgba(0, 255, 255, 0.4);
 }
 
 .img-shocase .item:nth-child(5)::after {
@@ -478,14 +478,16 @@ header {
     text-align: center;
     max-width: 320px;
 }
+
 .bmi-chart h1 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.table-heading{
+.table-heading {
     color: #fff;
 }
+
 table {
     width: 100%;
     border: 0.1px solid #dadada;
@@ -494,11 +496,14 @@ table {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 100;
 }
-th, td {
+
+th,
+td {
     padding: 15px;
     text-align: left;
     border-bottom: .1px solid #dadada;
 }
+
 th {
     font-weight: normal;
 }
@@ -507,7 +512,7 @@ tr:last-child td {
     border-bottom: none;
 }
 
-.Calculate-bmi{
+.Calculate-bmi {
     color: white;
 }
 
@@ -518,6 +523,7 @@ tr:last-child td {
     background-color: #282828;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 6.5rem;
 }
 
 .Calculate-bmi h1 {
@@ -545,18 +551,19 @@ tr:last-child td {
     border: none;
     font-size: 14px;
     background-color: #383838;
-    color: #ffffff ;
+    color: #ffffff;
 }
 
-.input-group input:focus{
+.input-group input:focus {
     color: #fff;
 }
+
 input::placeholder {
     color: #999;
 }
 
 .calculator button {
-    width:auto;
+    width: auto;
     padding: 1rem 6rem;
     background-color: #ff5630;
     color: white;
@@ -569,4 +576,107 @@ input::placeholder {
 
 .calculator button:hover {
     background-color: #e64a19;
+}
+
+.team-table {
+    margin-top: 6.5rem !important;
+}
+
+.team-text {
+    text-align: center;
+    color: white;
+}
+
+.team-section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.team-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.team-text p {
+    width: 35%;
+    margin: auto;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #282828;
+    border-radius: 1rem;
+    margin: 3rem 1rem 0rem 1rem;
+}
+
+.team-member .item {
+    border-radius: 1rem;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.team-member .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+.footer {
+    max-width: 70%;
+    margin: 6.5rem auto 2rem auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #b3b3b3;
+}
+
+.sub-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.footer > hr {
+    width: 100%;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sub-footer .left {
+    width: 50%;
+}
+
+.footer .left h1 {
+    color: #e64a19;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.right{
+    display: flex;
+    gap: 4rem;text-wrap: nowrap;
+}
+
+.right-text ul li a{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.notice{
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
